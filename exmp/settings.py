@@ -55,7 +55,7 @@ ROOT_URLCONF = 'exmp.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [BASE_DIR / 'catalog/templates/catalog'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
