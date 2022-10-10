@@ -4,7 +4,13 @@ from django.db import models
 
 
 class Daste_Bandi_Ketab(models.Model):
-    Name = models.CharField(max_length=150)
+    Noe = {
+        ('v', 'ورزشی'),
+        ('s', 'سیاسی'),
+        ('a', 'اجتماعی'),
+        ('f', 'فرهنگی'),
+    }
+    Name = models.CharField(max_length=150, choices=Noe)
 
     def __str__(self):
         return self.Name

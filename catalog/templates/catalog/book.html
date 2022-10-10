@@ -1,0 +1,6 @@
+<h2>book</h2>
+<ul>
+  {% for b in my_favorite_publishers %}
+  <li><a href="{% url 'namebook' b.id %}">{{ b.Name }}</a></li>
+  {% endfor %}
+</ul>
